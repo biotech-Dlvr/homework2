@@ -64,3 +64,9 @@ h1 {
   position: relative;
   left: 230px;
 }
+.footer {
+  text-align: center;
+  font-size: smaller;
+  color: #72afd3;
+  transition: all 150ms ease;
+}
