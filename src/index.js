@@ -27,12 +27,11 @@ function searchCity(city) {
 function displayTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector(".temperature");
-  let h4Element = document.querySelector(".weatherDescription");
+  let h4 = document.querySelector(".weatherDescription");
   let iconElement = document.querySelector("#icon");
   temperatureElement.innerHTML = `${temperature}`;
+  h4.innerHTML = response.data.weather[0].discription();
   iconElement.innerHTML = `https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`;
-  h4Element.innerHTML = response.data.weather[0].discription();
-  displayDiscription(response);
 }
 function displayWeatherCondition(response) {
   document.querySelector(".city").innerHTML = `${response.data.name}`;
