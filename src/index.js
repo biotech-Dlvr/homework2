@@ -12,13 +12,13 @@ function displayFormatDate() {
   let currentDay = days[date.getDay()];
   let currentTime = date.getHours();
   let currentMinutes = date.getMinutes();
-  let formattedDate = `${currentDay}, ${currentTime}:${currentMinutes} `;
   if (currentMinutes < 10) {
     currentMinutes = `0${currentMinutes}`;
   }
   if (currentTime < 10) {
     currentTime = `0${currentTime}`;
   }
+  let formattedDate = `${currentDay}, ${currentTime}:${currentMinutes} `;
   return formattedDate;
 }
 let timeElement = document.querySelector("#time");
