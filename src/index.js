@@ -13,7 +13,12 @@ function displayFormatDate() {
   let currentTime = date.getHours();
   let currentMinutes = date.getMinutes();
   let formattedDate = `${currentDay}, ${currentTime}:${currentMinutes} `;
-
+  if (currentMinutes < 10) {
+    currentMinutes = `0${currentMinutes}`;
+  }
+  if (currentTime < 10) {
+    currentTime = `0${currentTime}`;
+  }
   return formattedDate;
 }
 let h3 = document.querySelector("h3");
@@ -30,7 +35,7 @@ function displayTemperature(response) {
   let h4 = document.querySelector(".weatherDescription");
   let iconElement = document.querySelector("#icon");
   temperatureElement.innerHTML = `${temperature}`;
-  h4.innerHTML = response.data.weather[0].discription();
+  h4.innerHTML = response.data.weather[0].discription;
   iconElement.innerHTML = `https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`;
 }
 function displayWeatherCondition(response) {
