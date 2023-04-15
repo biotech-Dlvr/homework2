@@ -29,7 +29,6 @@ function displayTemperature(response) {
   let temperatureElement = document.querySelector(".temperature");
   let h4 = document.querySelector("h3");
   h4.innerHTML = response.data.weather[0].discription();
-
   let iconElement = document.querySelector("#icon");
   temperatureElement.innerHTML = `${temperature}`;
   iconElement.innerHTML = `https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`;
