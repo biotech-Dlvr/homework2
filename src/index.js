@@ -26,7 +26,9 @@ function searchCity(city) {
 function displayTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector(".temperature");
+  let iconElement = document.querySelector("#icon");
   temperatureElement.innerHTML = `${temperature}°C`;
+  iconElement.setAttribute("src", `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)= 
 }
 function displayWeatherCondition(response) {
   document.querySelector(".city").innerHTML = `${response.data.name}`;
