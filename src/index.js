@@ -65,8 +65,8 @@ function getCurrentLocation(event) {
 function showFormValues(event) {
   event.preventDefault();
   let cityInput = document.querySelector("#city-input");
-  let h1 = document.querySelector("h1");
-  h1.innerHTML = `${cityInput.value}`;
+  let city = document.querySelector(".city");
+  city.innerHTML = `${cityInput.value}`;
   searchCity(cityInput.value);
 }
 let searchEngineForm = document.querySelector("form");
