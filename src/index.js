@@ -32,6 +32,7 @@ function displayTemperature(response) {
   temperatureElement.innerHTML = `${temperature}`;
   iconElement.innerHTML = `https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`;
   h4Element.innerHTML = response.data.weather[0].discription();
+  displayDiscription(response);
 }
 function displayWeatherCondition(response) {
   document.querySelector(".city").innerHTML = `${response.data.name}`;
