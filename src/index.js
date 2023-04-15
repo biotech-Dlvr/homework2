@@ -61,3 +61,23 @@ let searchEngineForm = document.querySelector("form");
 searchEngineForm.addEventListener("submit", showFormValues);
 let currentLocation = document.querySelector("#currentLocation");
 currentLocation.addEventListener("click", getCurrentLocation);
+function showFahrenheitValues(event) {
+  event.preventDefault();
+  let celsiusToFahrenheit = Math.round(
+    (document.querySelector(".temperature").textContent * 9) / 5 + 32
+  );
+  document.querySelector(".temperature").textContent = celsiusToFahrenheit;
+}
+
+let fahrenheitUnits = document.querySelector(".fahrenheitUnits");
+fahrenheitUnits.addEventListener("click", showFahrenheitValues);
+
+function showCelsiusValues(event) {
+  event.preventDefault();
+  let fahrenheitToCelsius = Math.round(
+    ((document.querySelector(".temperature").textContent - 32) * 5) / 9
+  );
+  document.querySelector(".temperature").textContent = fahrenheitToCelsius;
+}
+let celsiusUnits = document.querySelector(".celsiusUnits");
+celsiusUnits.addEventListener("click", showCelsiusValues);
