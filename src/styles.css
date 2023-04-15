@@ -1,7 +1,14 @@
 .card {
   background-color: beige;
 }
-h1 {
+.search {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.city {
   font-size: 32px;
   font-weight: bold;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -58,11 +65,6 @@ h1 {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.temperature {
-  font-weight: bold;
-  font-size: 30px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
 .forecast {
   display: inline;
   border-radius: 10px;
@@ -72,6 +74,8 @@ h1 {
   margin-bottom: 0;
 }
 .row {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 8px;
   font-style: italic;
 }
