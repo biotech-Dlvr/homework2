@@ -28,10 +28,7 @@ function displayTemperature(response) {
   let temperatureElement = document.querySelector(".temperature");
   let iconElement = document.querySelector("#icon");
   temperatureElement.innerHTML = `${temperature}°C`;
-  iconElement.setAttribute(
-    "src",
-    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`
-  );
+  iconElement.innerHTML = `https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`;
 }
 function displayWeatherCondition(response) {
   document.querySelector(".city").innerHTML = `${response.data.name}`;
