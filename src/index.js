@@ -30,7 +30,7 @@ function displayTemperature(response) {
   temperatureElement.innerHTML = `${temperature}°C`;
   iconElement.setAttribute(
     "src",
-    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`
   );
 }
 function displayWeatherCondition(response) {
