@@ -27,8 +27,8 @@ function searchCity(city) {
 function displayTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector(".temperature");
-  let h4 = document.querySelector("h3");
-  h4.innerHTML = response.data.weather[0].discription();
+  let h4Element = document.querySelector(".discription");
+  h4Element.innerHTML = response.data.weather[0].discription();
   let iconElement = document.querySelector("#icon");
   temperatureElement.innerHTML = `${temperature}`;
   iconElement.innerHTML = `https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`;
