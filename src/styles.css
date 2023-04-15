@@ -6,7 +6,44 @@ h1 {
   font-weight: bold;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
+.temperature {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.celsiusUnits {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(0, 153, 255);
+}
+.celsiusUnits:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: black;
+}
+.line {
+  font-weight: lighter;
+  font-size: 25px;
+}
+.fahrenheitUnits {
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 20px;
+}
+.fahrenheitUnits:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: blue;
+}
+.time {
+  font-weight: lighter;
+  font-size: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.weather {
+  font-size: 10px;
+}
 #currentLocation {
   background-color: rgba(179, 243, 163, 0.842);
   padding: 0.375rem 0.75rem;
@@ -24,12 +61,6 @@ h1 {
 .temperature {
   font-weight: bold;
   font-size: 30px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.time {
-  font-weight: lighter;
-  font-size: 10px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .forecast {
