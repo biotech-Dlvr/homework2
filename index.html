@@ -23,14 +23,18 @@
             <input class="btn btn-primary" type="submit" value="Search" />
             <button id="currentLocation">Current</button>
           </form>
-          <h1 class="city"></h1>
-          <h2>
-            <img src="" id="icon" />
-            <span class="temperature"></span>
-            <span class="celsiusUnits"> °C </span>
-            <span class="line"> | </span>
-            <span class="fahrenheitUnits"> °F </span>
-          </h2>
+          <div class="row-city">
+            <div class="col-6">
+              <img src="" id="icon" />
+              <span class="temperature">Temperature</span>
+              <span class="celsiusUnits"> °C </span>
+              <span class="line"> | </span>
+              <span class="fahrenheitUnits"> °F </span>
+            </div>
+            <div class="col-6">
+              <h1 class="city">Tehran</h1>
+            </div>
+          </div>
           <div>
             Last updated
             <span id="time"></span>
