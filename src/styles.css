@@ -5,6 +5,7 @@
   display: flex;
   flex-wrap: wrap;
   font-weight: bold;
+  font-style: normal;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .city {
@@ -44,7 +45,7 @@
 }
 .time {
   font-weight: lighter;
-  font-size: 10px;
+  font-size: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .weather {
