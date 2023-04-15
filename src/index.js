@@ -21,8 +21,8 @@ function displayFormatDate() {
   }
   return formattedDate;
 }
-let h3 = document.querySelector("h3");
-h3.innerHTML = displayFormatDate();
+let timeElement = document.querySelector("#time");
+timeElement.innerHTML = displayFormatDate();
 
 function searchCity(city) {
   let apiKey = "2ff29bed3181c3526c35cc5408037f85";
